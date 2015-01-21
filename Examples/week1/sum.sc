@@ -1,5 +1,7 @@
-object SumTailRecur {
-  // sum up integers from a through b
+// A tail recursion version of sum
+// sum: sum up integers from a through b
+
+object Sum {
   def sum(fun: Int => Int, a: Int, b: Int): Int = {
     def helper(base: Int, acc: Int): Int = {
       if (base > b) acc

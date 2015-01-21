@@ -7,6 +7,5 @@ object Exercise {
     }
     iter(1, n)
   }
-
   factorial(5)
 }

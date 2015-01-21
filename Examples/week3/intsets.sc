@@ -8,7 +8,7 @@ object Empty extends IntSet { // singleton, no 'new'
   def contains(x: Int): Boolean = false
   def incl(x: Int): IntSet = new NonEmpty(x, Empty, Empty)
   def union(that: IntSet): IntSet = that
-  override def toString = "."
+  override def toString = ""
 }
 
 class NonEmpty(val elem: Int, val leftSet: IntSet, val rightSet: IntSet) extends IntSet {
